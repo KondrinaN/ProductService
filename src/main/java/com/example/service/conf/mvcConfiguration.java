@@ -6,11 +6,15 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+
 import javax.sql.DataSource;
 
 @Configuration
 @EnableWebMvc
 public class mvcConfiguration {
+
+
+
     @Bean
     public InternalResourceViewResolver viewResolver()
     {

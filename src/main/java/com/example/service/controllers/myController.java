@@ -25,7 +25,7 @@ public class myController {
     @RequestMapping("/addProduct")
     public String addProduct(Product product)
     {
-        if(product!=null)
+        if(product.getName()!=null && product.getCount()!=null && product.getPrice()!=null)
             productService.save(product);
         return "addProduct";
     }*/
